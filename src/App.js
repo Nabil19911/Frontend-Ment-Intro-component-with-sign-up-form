@@ -1,24 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import Main from "./components/Main.styled";
+import Banner from "./components/style/Banner.styled";
+import Form from "./components/style/Form.styled";
+import GlobalStyle from "./components/style/Global.styled";
+import SectionOne from "./components/style/SectionOne.styled";
+import SectionTwo from "./components/style/SectionTwo.styled";
+
+const theme = {
+  fontWight: {
+    normal: 400,
+    bold: 500,
+    bolder: 600,
+    bbolder: 700,
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle imageUrl={"../assert/images/bg-intro-mobile.png"} />
+        <Main>
+          <SectionOne>
+            <div>
+              <h1>Learn to code by watching others</h1>
+            </div>
+            <div>
+              <p>
+                See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understadning how
+                developers think is invaluable.
+              </p>
+            </div>
+          </SectionOne>
+          <SectionTwo>
+            <Banner>
+              <p>
+                <span>Try it free 7 days</span> then $20/mo. thereafter
+              </p>
+            </Banner>
+            <Form>
+              <div>
+                <form>
+                  <input type="text" placeholder="First Name" />
+                  <input type="text" placeholder="Last Name" />
+                  <input type="email" placeholder="Email Address" />
+                  <input type="password" placeholder="Password" />
+                  <button type="submit">CLAIM YOUR FREE TRAIL</button>
+                </form>
+              </div>
+              <div>
+                <small>
+                  By clicking the button, you are agreeing to our Terms and
+                  Services
+                </small>
+              </div>
+            </Form>
+          </SectionTwo>
+        </Main>
+      </>
+    </ThemeProvider>
   );
 }
 
