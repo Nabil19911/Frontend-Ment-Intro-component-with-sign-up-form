@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
         background-position: top;
         background-size: 100%;
         height: 100%;
-        background-color:  hsl(0, 100%, 74%);
+        background-color: hsl(0, 100%, 74%);
         color: white;
     }
 `;

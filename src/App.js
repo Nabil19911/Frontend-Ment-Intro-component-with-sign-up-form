@@ -46,13 +46,13 @@ function App() {
                   <input type="text" placeholder="Last Name" />
                   <input type="email" placeholder="Email Address" />
                   <input type="password" placeholder="Password" />
-                  <button type="submit">CLAIM YOUR FREE TRAIL</button>
+                  <button type="button">CLAIM YOUR FREE TRAIL</button>
                 </form>
               </div>
               <div>
                 <small>
-                  By clicking the button, you are agreeing to our Terms and
-                  Services
+                  By clicking the button, you are agreeing to our{" "}
+                  <a href="#">Terms and Services</a>
                 </small>
               </div>
             </Form>
