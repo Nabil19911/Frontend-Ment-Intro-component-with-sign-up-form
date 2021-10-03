@@ -18,6 +18,17 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
         background-color: hsl(0, 100%, 74%);
         color: white;
+        @media (orientation: landscape) {
+            background-repeat: repeat;
+            background-size: 30%;
+        }
+        @media (min-width:1280px){
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
     }
 `;
 

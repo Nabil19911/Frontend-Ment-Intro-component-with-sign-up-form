@@ -16,6 +16,9 @@ const theme = {
 };
 
 function App() {
+  const submit = e => {
+    e.preventDefault();
+  };
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -41,12 +44,12 @@ function App() {
             </Banner>
             <Form>
               <div>
-                <form>
+                <form onSubmit={submit}>
                   <input type="text" placeholder="First Name" />
                   <input type="text" placeholder="Last Name" />
                   <input type="email" placeholder="Email Address" />
                   <input type="password" placeholder="Password" />
-                  <button type="button">CLAIM YOUR FREE TRAIL</button>
+                  <button type="submit">CLAIM YOUR FREE TRAIL</button>
                 </form>
               </div>
               <div>

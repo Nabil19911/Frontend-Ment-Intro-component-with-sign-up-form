@@ -33,7 +33,7 @@ const Form = styled.div`
     color: #bfbfbf;
     font-weight: ${({ theme }) => theme.fontWight.bbolder};
     width: 80%;
-    margin: auto;
+    margin: auto auto 2em auto;
     font-size: 0.9rem;
     line-height: 1.5;
     a {
