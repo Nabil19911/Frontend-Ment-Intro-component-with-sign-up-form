@@ -11,19 +11,19 @@ const SectionOne = styled.div`
     width: 80%;
     margin: 0 auto 2em auto;
     @media (min-width: 1280px) {
-      width: 87%;
+      width: 95%;
     }
     h1 {
       font-size: 2rem;
       font-weight: ${({ theme }) => theme.fontWight.bbolder};
       @media (min-width: 1280px) {
         font-size: 2.8rem;
-        letter-spacing: 1px;
+        line-height: 50px;
       }
     }
   }
   div:nth-child(2) {
-    width: 87%;
+    width: 95%;
     margin: auto;
     p {
       font-size: 1.1rem;
@@ -31,7 +31,7 @@ const SectionOne = styled.div`
       line-height: 1.5em;
       @media (min-width: 1280px) {
         font-size: 1rem;
-        width: 86%;
+        width: 96%;
       }
     }
   }
