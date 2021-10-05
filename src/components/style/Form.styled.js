@@ -4,9 +4,10 @@ const Form = styled.div`
   background-color: white;
   height: auto;
   border-radius: 10px;
-  padding: 1em 0;
+  padding: 2em 0;
+  box-shadow: 0 5px 0px 0px #00000026;
   form {
-    width: 90%;
+    width: 85%;
     margin: auto;
     > small {
       display: block;
@@ -19,7 +20,7 @@ const Form = styled.div`
   }
   input {
     padding: 1.2em 2em;
-    margin: 0.5em;
+    margin: 1em auto;
     width: 100%;
     letter-spacing: 1px;
     font-weight: ${({ theme }) => theme.fontWight.bbolder};
