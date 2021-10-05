@@ -12,7 +12,7 @@ const Main = styled.main`
   }
   @media (min-width: 1280px) {
     width: 80%;
-    margin: 5em auto auto auto;
+    margin: auto;
   }
 `;
 
