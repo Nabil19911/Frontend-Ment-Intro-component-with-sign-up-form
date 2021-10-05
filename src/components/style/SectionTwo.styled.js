@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SectionTwo = styled.section`
+const SectionTwo = styled.div`
   width: 90%;
   margin: auto;
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SectionOne = styled.section`
+const SectionOne = styled.div`
   width: 100%;
   margin-bottom: 3.5em;
   @media (min-width: 1280px) {

@@ -24,6 +24,9 @@ const Banner = styled.div`
     span {
       font-weight: ${({ theme }) => theme.fontWight.bbolder};
     }
+    @media (min-width: 1280px) {
+      width: 100%;
+    }
   }
 `;
 
