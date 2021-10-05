@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro component with sign up form
 
-![Design preview for the Intro component with sign up form coding challenge](public\assert\design\desktop-preview.jpg)
+![Design preview for the Intro component with sign up form coding challenge](public/assert/design/desktop-preview.jpg)
 
 # Frontend Mentor - Intro component with sign up form solution
 
@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](public\assert\solution\solution.png)
+![](public/assert/solution/solution.png)
 
 ### Links
 
