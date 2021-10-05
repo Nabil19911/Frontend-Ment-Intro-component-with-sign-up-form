@@ -5,20 +5,40 @@ const Form = styled.div`
   height: auto;
   border-radius: 10px;
   padding: 1em 0;
+  form {
+    width: 90%;
+    margin: auto;
+    > small {
+      display: block;
+      color: hsl(0, 100%, 74%);
+      text-align: right;
+      margin-bottom: 1em;
+      font-weight: ${({ theme }) => theme.fontWight.bbolder};
+      font-size: 0.5rem;
+    }
+  }
   input {
-    padding: 1.5em;
+    padding: 1.2em 2em;
     margin: 0.5em;
-    width: 85%;
+    width: 100%;
     letter-spacing: 1px;
     font-weight: ${({ theme }) => theme.fontWight.bbolder};
     border: 1px solid #00000026;
     outline: none;
+    border-radius: 5px;
+    &.error {
+      border: 2px solid hsl(0, 100%, 74%);
+      color: hsl(0, 100%, 74%);
+      background-image: url("../assert/images/icon-error.svg");
+      background-repeat: no-repeat;
+      background-position: right 1em center;
+    }
   }
   button {
     color: white;
     font-weight: ${({ theme }) => theme.fontWight.bbolder};
     letter-spacing: 2px;
-    width: 85%;
+    width: 100%;
     background-color: hsl(154, 59%, 51%);
     height: 4em;
     border-radius: 7px;
@@ -34,10 +54,12 @@ const Form = styled.div`
     font-weight: ${({ theme }) => theme.fontWight.bbolder};
     width: 80%;
     margin: auto auto 2em auto;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.5;
     a {
       color: hsl(0, 100%, 74%);
+      text-decoration: none;
+      font-weight: 800;
     }
   }
 `;
